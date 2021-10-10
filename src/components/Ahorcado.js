@@ -21,8 +21,8 @@ const Ahorcado = () => {
                 }
             });
     
+            //recupero y consoleo la respuesta del responso
             const json = await response.json();
-         
             console.log(json.data);
 
             // setLetra('')
@@ -50,12 +50,9 @@ const Ahorcado = () => {
                 body: JSON.stringify({ text: letra })
             });
             
+            //le agrego que console la respuesta del Post
             const json = await response.json();
             console.log(json.data);
-
-
-            // console.log ('paso por el mandarLetraOPalabra' + letra);
-            // console.log (json.data);
 
         } catch(error){
             alert(error);
