@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 const Ahorcado = () => {
 
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWY3ZGQzNGVmYmQ2MDAwNDg2ZWQ4ZSIsImlhdCI6MTYzMzY0ODExOH0.PwkCPI9i9IzFXOLut9t1gd_CzEiyFg1v6YRZ13IpEyo';
+    // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWY3ZGQzNGVmYmQ2MDAwNDg2ZWQ4ZSIsImlhdCI6MTYzMzY0ODExOH0.PwkCPI9i9IzFXOLut9t1gd_CzEiyFg1v6YRZ13IpEyo';
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNWY3ZGQzNGVmYmQ2MDAwNDg2ZWQ4ZSIsImlhdCI6MTYzMzg4MzkyNX0.WNXxVW3PQwW-wW3ePKdoci6aZjXYJO4ybgEczM9cG8Q';
     
     ///hanged-game/start
 
@@ -92,6 +93,9 @@ const Ahorcado = () => {
                 </p>
 
                 <strong>{respTry.message}</strong>
+                <p>
+                    <strong>{` La palabra es: ${respTry.word}`}</strong>
+                </p>
 
             </div>
 
