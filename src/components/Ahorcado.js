@@ -49,6 +49,14 @@ const Ahorcado = () => {
                 },
                 body: JSON.stringify({ text: letra })
             });
+            
+            const json = await response.json();
+            console.log(json.data);
+
+
+            // console.log ('paso por el mandarLetraOPalabra' + letra);
+            // console.log (json.data);
+
         } catch(error){
             alert(error);
         }

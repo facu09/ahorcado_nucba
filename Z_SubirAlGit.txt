@@ -1,0 +1,56 @@
+SI LA CARPETA YA EXISTE local y repo nube existe:
+1- Voy al VSC: y abro esa carpeta donde tengo todas las tareas   ALTGR + V (Abre VSC)
+	trio un : git config --get remote.origin.url   
+		  o un git remote -v
+		* para saber si esta conecta al Git de la nube bien
+
+2- tiro un 
+	git add .
+	git commit -m "Mensaje del commit" 
+		=> Nos permite crear un commit con un mensaje
+	git push -u origin main 
+		=> Nos permite subir los cambios al repositorio (github)
+3- Fin
+---------
+
+SI LA CARPETA NO EXISTE en la (local):
+0- Creo la carpeta local
+1- tiro un (si la carpeta es nueva --> Tengo que crear el la carpeta Git y bajar el repo primero )
+	git init 	=> Inicializa: Si ya existe en esa carpeta, la carpeta oculta .git ==> reiniciliza el repositorio
+	SI NUNCA SE SUBIÓ NADA ...
+		o - tiro un revinculación con el repo de la nube:
+			git remote add origin  https://github.com/facu09/A02_Tareas
+				==> da error: remote origin already exists.
+2- tiro un 
+	git add .
+	git commit -m "Mensaje del commit" 
+		=> Nos permite crear un commit con un mensaje
+	git push -u origin main 
+		=> Nos permite subir los cambios al repositorio (github)
+3- Fin
+
+--------------------
+
+SI EL REPO DE LA NUBE tiene cosas que nosotros no tenemos localmente ==>
+	==> Primero tenemos que hacer un:   Pull
+		git pull --all
+			==> (bajamos los cambios del repo de la nube al local)
+----------------------
+SI EL REPO EN LA NUBE NO EXISTE O QUEREMOS CREAR UNO NUEVO
+0- Vamos a GitHub web y creamos nuevo Repo
+1- Con el link del Repo metemos:
+	un clone:
+		git clone https://github.com/facu09/01_Ej1.git
+			** esto genera la vinculación y crea carpeta local oculta .git
+
+--------------------------------
+--------------------------------
+Otros comandos utilies:
+---------------------------------
+git config --get remote.origin.url   
+git remote -v
+	==>(para saber a que repositorio en la nube)
+
+
+git pull --all
+	==> (bajamos los cambios del repo de la nube al local)
